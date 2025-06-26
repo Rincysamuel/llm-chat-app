@@ -6,7 +6,7 @@ st.set_page_config(page_title="💬 LLM Chat App", layout="centered")
 # Sidebar config
 with st.sidebar:
     st.title("🧠 LLM Chat Settings")
-    model_name = st.selectbox("Select Model", ["llama3", "mistral", "codellama"], index=0)
+    model_name = st.selectbox("Select Model", ["llama3", "mistral"], index=0)
     if st.button("🔄 Clear Chat"):
         st.session_state.messages = []
         st.session_state.user_input = ""  # Clear input manually
